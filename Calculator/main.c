@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main () {
-    int num1, num2, answer, userSelection;
+    int userSelection;
+    float num1, num2, answer;
 
 while (1)
 {
@@ -17,49 +18,49 @@ while (1)
     // Addition
     if (userSelection == 1) {
         printf("%s\n", "Please enter your first number: ");
-        scanf("%d", &num1);
+        scanf("%f", &num1);
 
         printf("%s\n", "Please enter your second number: ");
-        scanf("%d", &num2);
+        scanf("%f", &num2);
 
         answer = num1 + num2;
-        printf("%d + %d = %d", num1, num2, answer);
+        printf("%f + %f = %.2f", num1, num2, answer);
     }
 
 // Subtraction
     if (userSelection == 2) {
         printf("%s\n", "Please enter your first number: ");
-        scanf("%d", &num1);
+        scanf("%f", &num1);
 
         printf("%s\n", "Please enter your second number: ");
-        scanf("%d", &num2);
+        scanf("%f", &num2);
 
         answer = num1 - num2;
-        printf("%d - %d = %d", num1, num2, answer);
+        printf("%f - %f = %.2f", num1, num2, answer);
     }
 
 // Multiplication
      if (userSelection == 3) {
         printf("%s\n", "Please enter your first number: ");
-        scanf("%d", &num1);
+        scanf("%f", &num1);
 
         printf("%s\n", "Please enter your second number: ");
-        scanf("%d", &num2);
+        scanf("%f", &num2);
 
         answer = num1 * num2;
-        printf("%d * %d = %d", num1, num2, answer);
+        printf("%f * %f = %.2f", num1, num2, answer);
     }
 
 // Division
      if (userSelection == 4) {
         printf("%s\n", "Please enter your first number: ");
-        scanf("%d", &num1);
+        scanf("%f", &num1);
 
         printf("%s\n", "Please enter your second number: ");
-        scanf("%d", &num2);
+        scanf("%f", &num2);
 
         answer = num1 / num2;
-        printf("%d / %d = %d", num1, num2, answer);
+        printf("%f / %f = %.2f", num1, num2, answer);
     }
 
 // Exit
